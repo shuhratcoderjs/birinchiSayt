@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    transform: translateY(30vh);
+    background-image: repeating-linear-gradient(red, blue);
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    padding: 0;
+    /* background-color: #000; */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 
+                    /* red -10px 0px 0px,
+                    red 0px -20px 0px  ,
+                    red -30px 0px 0px,
+                    red 0px -40px 0px  ,
+                    red -50px 0px 0px,
+                    red 0px -60px 0px  ,
+                    red -70px 0px 0px,
+                    red 0px -80px 0px , */
+
+                white -80px -80px 100px
+    
+                
+                
+                ;
+    
+    box-shadow: rgb(141, 58, 58) 0px 0px 106px green 0 0 100px;
+    transition:all 4s linear ;
+    background-color: transparent;
+}
+
+.box:hover{
+    transform: rotate(180deg);
+    box-shadow: 
+    white 10px 0px 0px,
+    white 0px 10px 0px,
+
+    red 20px 0px 0px  ,
+    red 20px 20px 0px  ,
+
+    white 30px 30px 0px,
+    red 40px 40px 0px  ,
+    white 50px 50px 0px,
+    red 60px 60px 0px  ,
+    white 70px 70px 0px,
+    red 80px 80px 0px 
+
+    
+    
+    ;
+}
+.fon{
+    position: absolute;
+    width: 292px ;
+    height: 292px;
+    left: 0;
+    top: 0;
+    transform: translateX(4px) translateY(4px);
+    background-color: rgba(44, 136, 25, 1);
+    background-image: linear-gradient(120deg,red, red 100px , blue 60px, blue);
+
+}
+.fon:hover{
+    background-image: linear-gradient(120deg,red, red 100px , blue 60px, blue);
+
+}
+.color{
+    background-color: green;
+    width: 450px;
+    height: 150px;
+    position: absolute;
+    top:  75px;
+    left: -75px; 
+    animation: aylan;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    background-image: linear-gradient(to left, red , blue);
+}
+
+@keyframes aylan {
+    0%{
+        transform: rotate(0deg);
+    /* background-image: linear-gradient(to left, red , blue); */
+
+
+    }
+    100%{
+        transform: rotate(360deg);
+        /* background-image: linear-gradient(to left, yellow , pink); */
+
+    }  
+}
